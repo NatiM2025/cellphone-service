@@ -2,7 +2,7 @@ package com.pluralsight;
 
 public class CallPhone {
 
-    private int serialNumber;
+    private long serialNumber;
     private String model;
     private String carrier;
     private String phoneNumber;
@@ -16,7 +16,7 @@ public class CallPhone {
         this.owner = "";
     }
     // getters
-    public int getSerialNumber(){
+    public long getSerialNumber(){
         return serialNumber;
     }
     public String getModel(){
@@ -34,7 +34,7 @@ public class CallPhone {
 
     // Setters
 
-    public void setSerialNumber(int serialNumber){
+    public void setSerialNumber(long serialNumber){
         this.serialNumber = serialNumber;
     }
     public void setModel(String model){

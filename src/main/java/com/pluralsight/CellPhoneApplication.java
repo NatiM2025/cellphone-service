@@ -10,7 +10,7 @@ public class CellPhoneApplication {
         Scanner input = new Scanner(System.in);
         System.out.println("=====Pleas enter your phone information=====");
         System.out.println("What is the serial number?: ");
-        int serialNumber = input.nextInt();
+        Long serialNumber = input.nextLong();
         input.nextLine();
         System.out.println("What model is your phone?: ");
         String model = input.nextLine();
