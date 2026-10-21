@@ -21,6 +21,7 @@ public class CellPhoneApplication {
         System.out.println("Who is the owner of the phone?: ");
         String owner = input.nextLine();
 
+        input.close();
         // getting and setting
 
         phone.setSerialNumber(serialNumber);
@@ -29,7 +30,11 @@ public class CellPhoneApplication {
         phone.setPhoneNumber(phonNumber);
         phone.setOwner(owner);
 
-
+        System.out.println("Your serial: " + phone.getSerialNumber());
+        System.out.println("Your model: " + phone.getModel());
+        System.out.println("Your carrier: " + phone.getCarrier());
+        System.out.println("Your phone number: " + phone.getPhoneNumber());
+        System.out.println("Owner: " + phone.getOwner());
 
     }
 }
